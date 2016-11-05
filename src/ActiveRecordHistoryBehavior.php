@@ -4,9 +4,9 @@
  * @author Mikhail Mikhalev
  */
 
-namespace nhkey\arh;
+namespace beatep\arh;
 
-use nhkey\arh\managers\BaseManager;
+use beatep\arh\managers\BaseManager;
 use yii\db\BaseActiveRecord;
 use \yii\base\Behavior;
 
@@ -18,7 +18,7 @@ class ActiveRecordHistoryBehavior extends Behavior
      * @var BaseManager This is manager for save history in some storage
      * Default value: DBManager.
      */
-    public $manager ='nhkey\arh\managers\DBManager';
+    public $manager ='beatep\arh\managers\DBManager';
 
     /**
      * @var array This fields don't save in your storage

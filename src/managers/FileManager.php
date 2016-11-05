@@ -4,14 +4,14 @@
  * @author Mikhail Mikhalev
  */
 
-namespace nhkey\arh\managers;
+namespace beatep\arh\managers;
 
 use yii\helpers\FileHelper;
 
 
 /**
  * Class FileManager for save history in filesystem
- * @package nhkey\arh
+ * @package beatep\arh
  */
 class FileManager extends BaseManager
 {

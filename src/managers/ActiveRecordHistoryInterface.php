@@ -4,7 +4,7 @@
  * @author Mikhail Mikhalev
  */
 
-namespace nhkey\arh\managers;
+namespace beatep\arh\managers;
 
 interface ActiveRecordHistoryInterface
 {

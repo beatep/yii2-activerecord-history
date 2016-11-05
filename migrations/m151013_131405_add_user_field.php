@@ -5,7 +5,7 @@
  */
 
 use yii\db\Migration;
-use nhkey\arh\managers\DBManager;
+use beatep\arh\managers\DBManager;
 
 
 /**

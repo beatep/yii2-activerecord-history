@@ -4,7 +4,7 @@
  * @author Mikhail Mikhalev
  */
 
-namespace nhkey\arh\managers;
+namespace beatep\arh\managers;
 
 use Yii;
 
@@ -52,14 +52,14 @@ abstract class BaseManager implements ActiveRecordHistoryInterface
         $pk = $pk[0];
 
         $data = [
-            'table' => $object->tableName(),
+            'model' => $object->tableName(),
             'field_id' => $object->getPrimaryKey(),
             'type' => $type,
-            'date' => date('Y-m-d H:i:s', time()),
+            'created_at' => date('Y-m-d H:i:s', time()),
         ];
 
         if ($this->saveUserId)
-            $data['user_id'] = isset(Yii::$app->user->id) ?  Yii::$app->user->id : '';
+            $data['benutzer_id'] = isset(Yii::$app->user->id) ?  Yii::$app->user->id : '';
 
         switch ($type) {
             case self::AR_INSERT:

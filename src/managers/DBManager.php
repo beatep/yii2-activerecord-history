@@ -4,7 +4,7 @@
  * @author Mikhail Mikhalev
  */
 
-namespace nhkey\arh\managers;
+namespace beatep\arh\managers;
 
 use Yii;
 use yii\db\Connection;
@@ -13,7 +13,7 @@ use yii\di\Instance;
 
 /**
  * Class DBManager for save history in DB
- * @package nhkey\arh
+ * @package beatep\arh
  */
 class DBManager extends BaseManager
 {
