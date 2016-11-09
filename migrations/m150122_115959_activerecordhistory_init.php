@@ -24,13 +24,13 @@ class m150122_115959_activerecordhistory_init extends Migration
 
         $this->createTable(DBManager::$defaultTableName, [
             'id' => $this->bigPrimaryKey(),
-            'date' => $this->datetime()->notNull(),
-            'table' => $this->string()->notNull(),
+            'model' => $this->string()->notNull(),
             'field_name' => $this->string()->notNull(),
             'field_id' => $this->string()->notNull(),
             'old_value' => $this->text(),
             'new_value' => $this->text(),
             'type' => $this->smallInteger()->notNull(),
+            'created_at' => $this->datetime()->notNull(),
         ], $tableOptions);
 
         $this->createIndex('idx-table', DBManager::$defaultTableName, 'table');

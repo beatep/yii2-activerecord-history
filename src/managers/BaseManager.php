@@ -52,7 +52,7 @@ abstract class BaseManager implements ActiveRecordHistoryInterface
         $pk = $pk[0];
 
         $data = [
-            'model' => $object->tableName(),
+            'model' => basename(str_replace('\\', '/', get_class($object))),
             'field_id' => $object->getPrimaryKey(),
             'type' => $type,
             'created_at' => date('Y-m-d H:i:s', time()),
